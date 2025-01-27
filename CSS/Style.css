@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 10vh;
+    max-height: 55vh;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main {
+    background-image: url(../Media/Imgs/Background.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+.main .glass {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.8),
+            /* Darker at the top */
+            rgba(0, 0, 0, 0.3),
+            /* Lighter in the center */
+            rgba(0, 0, 0, 0.8)
+            /* Darker at the bottom */
+        );
+    position: absolute;
+    top: 0;
+}
+
+.hero {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Martel Sans", serif;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 56px;
+    font-style: normal;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 900;
+    font-size: 56px;
+    font-style: normal;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+}
+
+.line {
+    width: 100vw;
+    background-color: gray;
+    height: 10px;
+}
+
