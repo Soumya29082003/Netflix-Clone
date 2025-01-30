@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
 }
 
 .body {
@@ -78,7 +79,7 @@
     gap: 0;
 }
 
-/* .hero> :nth-child(1) {
+.hero> :nth-child(1) {
     font-weight: 900;
     font-size: 56px;
     font-style: normal;
@@ -104,11 +105,12 @@
     font-size: 16px;
     font-style: normal;
     text-align: center;
-} */
+}
 
 .Btn {
     padding: 5px 10px;
-    border-radius: 7px;
+    border-radius: 4px;
+    outline: none;
     color: white;
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     display: inline-flex;
@@ -158,18 +160,106 @@
 }
 
 .Section {
-    min-height: 70vh;
+    max-width: 80vw;
+    height: auto;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
-.Sec-Section {}
+.Section h1 {
+    font-size: 45px;
+}
+
+.Section p {
+    font-size: 20px;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 30vw;
+    position: relative;
+    z-index: 1;
+}
+
+.secimg video {
+    position: absolute;
+    top: 73px;
+    left: 50px;
+    width: 23vw;
+}
 
 .Thir-Section {}
 
 .Four-Section {}
 
-.Fif-Section {}
+.Fif-Section img {
+    width: 30vw;
+}
 
 .FAQ {
-    height: 80vh;
+    height: auto;
+    min-height: 90vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.FAQ h2 {
+    font-size: 48px;
+    text-align: center;
+    padding: 10px;
+}
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 70vw;
+    background-color: rgb(45, 45, 45);
+    padding: 22px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.faqbox:hover{
+    background-color: rgb(68, 67, 67);
+}
+footer{
+    color: white;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.footer{
+    height: 300px;
+    max-height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.footer-item{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-item a{
+    color: rgba(255, 255, 255, 0.618);
+}
+footer button{
+    margin: 10px;
 }
