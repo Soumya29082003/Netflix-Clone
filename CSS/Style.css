@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .body {
@@ -14,8 +16,8 @@
 
 .upper-section {
     position: relative;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 90vh;
 }
 
 .navbar {
@@ -50,11 +52,11 @@
     height: 100%;
     width: 100%;
     background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.9),
             /* Darker at the top */
-            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.5),
             /* Lighter in the center */
-            rgba(0, 0, 0, 0.8)
+            rgba(0, 0, 0, 0.9)
             /* Darker at the bottom */
         );
     position: absolute;
@@ -73,10 +75,10 @@
     font-family: "Martel Sans", serif;
     text-align: center;
     padding: 0 20px;
-    box-sizing: border-box;
+    gap: 0;
 }
 
-.hero> :nth-child(1) {
+/* .hero> :nth-child(1) {
     font-weight: 900;
     font-size: 56px;
     font-style: normal;
@@ -102,11 +104,72 @@
     font-size: 16px;
     font-style: normal;
     text-align: center;
+} */
+
+.Btn {
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.English.Btn {
+    background-color: transparent;
+}
+
+.email-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.email {
+    background-color: transparent;
+    padding: 20px 130px 15px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: white;
+}
+
+.Btn-Red {
+    background-color: red;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 12px 24px;
+    gap: 10px;
+}
+
+.Btn-Red-Sm {
+    background-color: red;
+    font-size: 14px;
+    font-weight: 500;
+    width: 75px;
 }
 
 .line {
-    width: 100vw;
-    background-color: gray;
-    height: 10px;
+    width: 100%;
+    background-color: rgb(68, 67, 67);
+    height: 7px;
 }
 
+.Section {
+    min-height: 70vh;
+    display: flex;
+}
+
+.Sec-Section {}
+
+.Thir-Section {}
+
+.Four-Section {}
+
+.Fif-Section {}
+
+.FAQ {
+    height: 80vh;
+}
